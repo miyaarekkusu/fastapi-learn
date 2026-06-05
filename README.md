@@ -51,4 +51,13 @@ FastAPI - Fast Application Programming Interface
 
 - データに関するもの（取得、更新など）はバックエンドでやり取りしている。
 
----
+![アプリのスクリーンショット](images/screenshot.png)
+
+リクエスト種類
+
+- GET（取得）
+- POST（登録）
+- PUT（更新）
+- DELETE（削除）
+
+![アプリのスクリーンショット](images/screenshot.png)
