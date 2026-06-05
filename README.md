@@ -11,11 +11,6 @@ FastAPI - Fast Application Programming Interface
 
 - バックエンドフレームワーク
 
-- パス
-  https://training.devlaunch.us　/tim　?video=123
-  　　　　　　　↓　　　　　　　　　　↓　　　　↓
-  　　　　　ドメイン　　　　エンドポイント　クエリパラメータ
-
 エンドポイント
 
 - アクセス制限のルート
@@ -41,14 +36,15 @@ FastAPI - Fast Application Programming Interface
 - ヘッダー
 - ボデイ
 
-                      リスポンス到着
+                リスポンス到着
 
   フロントエンド ← バックエンド・APIサーバ
   クライアント・ウエブサイト　→　
   リクエスト送信
 
-セキュリティレイヤー
+バックエンド・APIサーバー
 
+- セキュリティレイヤー
 - データに関するもの（取得、更新など）はバックエンドでやり取りしている。
 
 ![アプリのスクリーンショット](images/screenshot.png)
@@ -60,4 +56,22 @@ FastAPI - Fast Application Programming Interface
 - PUT（更新）
 - DELETE（削除）
 
-![アプリのスクリーンショット](images/screenshot.png)
+![アプリのスクリーンショット](images/status-code.png)
+
+リクエスト・レスポンス例
+
+ユーザーが投稿をこうしたい
+
+リクエスト
+
+- Type: PATCH
+- Path: /api/post/45535
+- ボデイ
+
+リクエスト
+
+- Status Code: 204
+- ボデイ
+  正常にデータ更新
+
+---
